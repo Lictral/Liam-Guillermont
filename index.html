@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liam Guillermont – Développeur jeu vidéo</title>
+  <meta name="description" content="Portfolio de Liam Guillermont, étudiant développeur informatique et jeu vidéo à Lyon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="liam.png">
+  <link rel="stylesheet" href="home_page.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#a-propos"><img src="liam.png" alt="Portrait de Liam Guillermont"><span>Liam Guillermont</span></a>
+      <div class="header-right">
+        <nav aria-label="Navigation principale">
+          <a href="#a-propos" data-en="About">À propos</a>
+          <a href="#projets" data-en="Projects">Projets</a>
+          <a href="#contact" data-en="Contact">Contact</a>
+        </nav>
+        <button type="button" id="lang-toggle" class="lang"><span data-l="fr">FR</span><span data-l="en">EN</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="a-propos">
+    <div class="wrap">
+      <div class="hero">
+        <img class="portrait" src="liam.png" alt="Liam Guillermont" width="144" height="144">
+        <div>
+          <h1>Liam Guillermont</h1>
+          <p class="role" data-en="Computer and video game developer">Développeur informatique et jeu vidéo</p>
+          <p class="lead" data-en="Student in Lyon. I mostly work in C++ on game engines, and I also enjoy backend and databases.">Étudiant à Lyon. Je travaille surtout en C++ sur des moteurs de jeu, et j'aime aussi le backend et les bases de données.</p>
+        </div>
+      </div>
+
+      <p class="about-text" data-en="I am studying for a Bachelor's degree in computer development, video game option, at Gaming Campus Lyon (since 2023). There I built game engines in C++ with SFML and DirectX 12, games with Unity, Godot and Pygame, and a website with a PHP back end and a database. I also did a Lead QA internship, coordinating a team of 25 developers.">Je prépare un Bachelor en développement informatique, option jeu vidéo, à Gaming Campus Lyon (depuis 2023). J'y ai créé des moteurs de jeu en C++ avec SFML et DirectX 12, des jeux sous Unity, Godot et Pygame, ainsi qu'un site web avec back-end PHP et base de données. J'ai aussi fait un stage de Lead QA, où j'ai coordonné une équipe de 25 développeurs.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3 data-en="Technical skills">Compétences techniques</h3>
+          <ul>
+            <li data-en="Languages: C++, C, C#, Python, JavaScript, PHP, SQL">Langages : C++, C, C#, Python, JavaScript, PHP, SQL</li>
+            <li data-en="Engines and libraries: DirectX 12, SFML, Unity, Godot, Pygame">Moteurs et bibliothèques : DirectX 12, SFML, Unity, Godot, Pygame</li>
+            <li data-en="Tools: Git, CMake, Visual Studio 2022">Outils : Git, CMake, Visual Studio 2022</li>
+            <li data-en="Web: HTML, CSS, JavaScript, PHP">Web : HTML, CSS, JavaScript, PHP</li>
+            <li data-en="Software architecture, low-level programming and rendering">Architecture logicielle, programmation bas niveau et rendu</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-en="Soft skills">Compétences humaines</h3>
+          <ul>
+            <li data-en="Team coordination and communication">Coordination d'équipe et communication</li>
+            <li data-en="Organisation and project management">Organisation et gestion de projet</li>
+            <li data-en="Problem solving">Résolution de problèmes</li>
+            <li data-en="Customer contact (Game Master at EVA Lyon Nord)">Contact client (Game Master chez EVA Lyon Nord)</li>
+            <li data-en="Team spirit">Esprit d'équipe</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-en="Hobbies">Loisirs</h3>
+          <ul>
+            <li data-en="Virtual reality">Réalité virtuelle</li>
+            <li data-en="Video game tournaments, as a player and as staff">Tournois de jeux vidéo, comme joueur et comme staff</li>
+            <li data-en="Game jams">Game jams</li>
+            <li data-en="Japanese (beginner)">Japonais (débutant)</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="button" href="Liam_Guillermont_CV.pdf" download data-en="Download my CV (PDF)">Télécharger mon CV (PDF)</a>
+    </div>
+    </section>
+
+    <section id="projets">
+    <div class="wrap">
+      <div class="section-head"><h2 data-en="Projects">Projets</h2></div>
+      <p class="section-intro"><span data-en="A selection of my projects. All of them are available on">Une sélection de mes projets. Tous sont disponibles sur</span> <a href="https://lictral.itch.io/" data-en="my itch.io profile">mon profil itch.io</a>.</p>
+
+      <!--
+        Pour un projet avec vidéo et/ou téléchargement, ajoutez sur la balise <li> :
+          data-video="https://www.youtube.com/watch?v=XXXXXXXXXXX"   (YouTube ou fichier .mp4 / .webm)
+          data-download="https://lictral.itch.io/nom-du-projet"      (page ou fichier à télécharger)
+        Sans data-video, la carte ouvre simplement la page itch.io.
+      -->
+      <ul class="projects">
+        <li>
+          <h3><a href="https://lictral.itch.io/engine-project">Moteur de jeu en C++ avec DirectX 12</a></h3>
+          <p data-en="Game engine built in a team. Work on rendering and low-level programming.">Moteur de jeu créé en équipe. Travail sur le rendu et la programmation bas niveau.</p>
+          <div class="meta"><p class="tags">C++, DirectX 12</p><span class="badge-ai"></span></div>
+        </li>
+        <li>
+          <h3><a href="https://lictral.itch.io/solar-system">Solar System</a></h3>
+          <p data-en="A solar system made with a custom C++ engine using DirectX.">Un système solaire réalisé avec un moteur C++ personnalisé utilisant DirectX.</p>
+          <div class="meta"><p class="tags">C++, DirectX</p><span class="badge-ai"></span></div>
+        </li>
+        <li>
+          <h3><a href="https://lictral.itch.io/dashurai">Dashurai</a></h3>
+          <p data-en="Platformer made in two weeks with Unity. A Firebase database stores player and level information.">Jeu de plateforme réalisé en deux semaines sous Unity. Une base de données Firebase stocke les informations des joueurs et des niveaux.</p>
+          <div class="meta"><p class="tags">Unity, C#, Firebase</p><span class="badge-ai"></span></div>
+        </li>
+        <li>
+          <h3><a href="https://lictral.itch.io/consoleware">ConsoleWare</a></h3>
+          <p data-en="A series of mini-games on a console, inspired by WarioWare.">Une série de mini-jeux sur une console, inspirée de WarioWare.</p>
+          <div class="meta"><p class="tags" data-en="Video game, mini-games">Jeu vidéo, mini-jeux</p><span class="badge-ai"></span></div>
+        </li>
+        <li>
+          <h3><a href="https://lictral.itch.io/multithreading">MultiThreading</a></h3>
+          <p data-en="One-week project on multithreading.">Projet d'une semaine sur le multithreading.</p>
+          <div class="meta"><p class="tags">C++, multithreading</p><span class="badge-ai"></span></div>
+        </li>
+        <li>
+          <h3><a href="https://lictral.itch.io/simd">SIMD</a></h3>
+          <p data-en="Project using SIMD instructions.">Projet utilisant les instructions SIMD.</p>
+          <div class="meta"><p class="tags">C++, SIMD</p><span class="badge-ai"></span></div>
+        </li>
+        <li>
+          <h3><a href="https://lictral.itch.io/assetengine">AssetEngine</a></h3>
+          <p data-en="Management of resource archives for a game engine.">Gestion d'archives de ressources pour un moteur de jeu.</p>
+          <div class="meta"><p class="tags">C++, archives</p><span class="badge-ai"></span></div>
+        </li>
+        <li>
+          <h3><a href="https://lictral.itch.io/ascii-donot">ASCII donut without a donut</a></h3>
+          <p data-en="A donut displayed in ASCII characters.">Un donut affiché en caractères ASCII.</p>
+          <div class="meta"><p class="tags" data-en="Rendering, ASCII">Rendu, ASCII</p><span class="badge-ai"></span></div>
+        </li>
+      </ul>
+    </div>
+    </section>
+
+    <section id="contact">
+    <div class="wrap">
+      <div class="section-head"><h2>Contact</h2></div>
+      <p class="section-intro" data-en="I am looking to join a team to work on concrete projects, in software development as well as video games. Feel free to write to me.">Je cherche à rejoindre une équipe pour contribuer à des projets concrets, en développement logiciel comme en jeu vidéo. N'hésitez pas à m'écrire.</p>
+      <ul class="contacts">
+        <li><span class="label">Email</span> <a id="email" href="mailto:liamguillermont@gmail.com">liamguillermont@gmail.com</a> <button type="button" id="copy-email" class="link-button" data-en="Copy address">Copier l'adresse</button> <span id="copy-status" role="status" aria-live="polite"></span></li>
+        <li><span class="label">LinkedIn</span> <a href="https://www.linkedin.com/in/liam-guillermont-491a67298/" rel="noopener">Liam Guillermont</a></li>
+        <li><span class="label">itch.io</span> <a href="https://lictral.itch.io/" rel="noopener">lictral.itch.io</a></li>
+      </ul>
+    </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><p>© <span id="year">2026</span> Liam Guillermont</p></div>
+  </footer>
+
+  <dialog id="project-dialog" aria-labelledby="dlg-title">
+    <button type="button" class="dlg-close" id="dlg-close">×</button>
+    <div class="dlg-body">
+      <div class="media" id="dlg-media"></div>
+      <h3 id="dlg-title"></h3>
+      <p id="dlg-desc"></p>
+      <div class="dlg-actions" id="dlg-actions"></div>
+    </div>
+  </dialog>
+
+  <script src="home_page.js"></script>
+</body>
+</html>
